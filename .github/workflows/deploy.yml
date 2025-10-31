@@ -29,21 +29,31 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: |
+          echo "Installing dependencies..."
+          npm install --legacy-peer-deps
+          echo "Dependencies installed successfully"
 
       - name: Build
-        run: npm run build
+        run: |
+          echo "Building Next.js application..."
+          npm run build
+          echo "Build completed successfully"
         env:
           NODE_ENV: production
           NEXT_PUBLIC_APP_URL: https://syal00.github.io
 
       - name: Verify build output
         run: |
-          ls -la out/
+          echo "Verifying build output..."
+          ls -la out/ || echo "ERROR: out/ directory not found"
           if [ ! -f "out/index.html" ]; then
             echo "ERROR: Build output missing!"
+            echo "Contents of out/ directory:"
+            ls -la out/ || true
             exit 1
           fi
+          echo "✓ Build output verified successfully"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
