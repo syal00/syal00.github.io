@@ -3,7 +3,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import { validateString, isValidEmail } from '../../../../utils/time-converter';
-import axios from 'axios';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -103,38 +102,25 @@ export default function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      // Try to send via API if available
-      try {
-        const response = await axios.post('/api/contact', {
-          name: formData.name.trim(),
-          email: formData.email.trim(),
-          message: formData.message.trim(),
-        });
-
-        if (response.data.ok) {
-          const statusEl = document.querySelector('.form-status');
-          if (statusEl) {
-            statusEl.textContent = 'Thanks! Your message has been sent successfully.';
-          }
-          toast.success('Message sent successfully!');
-          handleReset();
-        } else {
-          toast.error(response.data.message || 'Failed to send message');
-        }
-      } catch (apiError) {
-        // If API fails, show success message with email instruction
-        const statusEl = document.querySelector('.form-status');
-        if (statusEl) {
-          statusEl.textContent = 'Thanks! Your message has been prepared. Use the Email button on the left to contact me directly.';
-          statusEl.setAttribute('role', 'status');
-          statusEl.setAttribute('aria-live', 'polite');
-        }
-        toast.success('Message prepared. Please email directly using the Email Me button.');
-        handleReset();
+      // For static export, show success message with email instruction
+      const statusEl = document.querySelector('.form-status');
+      if (statusEl) {
+        statusEl.textContent = 'Thanks! Your message has been prepared. Use the Email button on the left to contact me directly.';
+        statusEl.setAttribute('role', 'status');
+        statusEl.setAttribute('aria-live', 'polite');
       }
+      
+      // Create mailto link with pre-filled message
+      const mailtoLink = `mailto:syal0005@algonquinlive.com?subject=Contact from Portfolio&body=Name: ${encodeURIComponent(formData.name.trim())}%0AEmail: ${encodeURIComponent(formData.email.trim())}%0A%0AMessage:%0A${encodeURIComponent(formData.message.trim())}`;
+      
+      toast.success('Message prepared! Opening email...');
+      
+      // Open email client
+      window.location.href = mailtoLink;
+      
+      handleReset();
     } catch (error) {
-      const errorMessage =
-        error.response?.data?.message || 'An error occurred. Please try again.';
+      const errorMessage = 'An error occurred. Please try again.';
       toast.error(errorMessage);
     } finally {
       setIsSubmitting(false);

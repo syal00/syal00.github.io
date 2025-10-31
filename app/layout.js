@@ -25,14 +25,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   const gtmId = process.env.NEXT_PUBLIC_GTM;
 
-  // Validate required env vars on server boot
-  if (process.env.NODE_ENV === 'production') {
-    const requiredVars = ['EMAIL_ADDRESS', 'GMAIL_PASSKEY'];
-    const missing = requiredVars.filter(v => !process.env[v]);
-    if (missing.length > 0) {
-      console.warn(`⚠️  Missing environment variables: ${missing.join(', ')}`);
-    }
-  }
+  // Note: For static export (GitHub Pages), API routes are not available
+  // Email functionality uses mailto links instead
 
   return (
     <html lang="en">

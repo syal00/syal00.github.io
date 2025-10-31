@@ -1,18 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export',
+  trailingSlash: true,
   images: {
-    unoptimized: false,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
+    unoptimized: true,
   },
-  // For static export (if needed for GitHub Pages)
-  // output: 'export',
-  // trailingSlash: true,
+  basePath: '',
+  assetPrefix: '',
 };
 
 module.exports = nextConfig;
