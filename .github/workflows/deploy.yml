@@ -29,14 +29,14 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: |
-          npm install --legacy-peer-deps
+        run: npm install --legacy-peer-deps
 
       - name: Build
         run: npm run build
         env:
           NODE_ENV: production
           NEXT_PUBLIC_APP_URL: https://syal00.github.io
+        continue-on-error: false
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
