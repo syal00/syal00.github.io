@@ -1,0 +1,54 @@
+.glow-card {
+  position: relative;
+  --mouse-x: 0px;
+  --mouse-y: 0px;
+  --proximity: 0;
+}
+
+.glow-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  padding: 2px;
+  background: conic-gradient(
+    from 0deg,
+    #16f2b3,
+    #ec4899,
+    #9333ea,
+    #16f2b3
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.glow-card:hover::before {
+  opacity: 0.5;
+}
+
+.glow-card::after {
+  content: '';
+  position: absolute;
+  top: var(--mouse-y);
+  left: var(--mouse-x);
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+    circle,
+    rgba(22, 242, 179, 0.2) 0%,
+    transparent 70%
+  );
+  transform: translate(-50%, -50%);
+  opacity: var(--proximity);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.glow-card:hover::after {
+  --proximity: 1;
+}
