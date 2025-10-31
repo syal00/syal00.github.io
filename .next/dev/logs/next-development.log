@@ -1,3 +1,2456 @@
-[00:04:16.502] Server  ERROR   Error: ENOENT: no such file or directory, scandir 'E:\portfolio\syal00.github.io\app'
-[00:04:16.507] Server  ERROR    ⨯ "unhandledRejection:" Error: ENOENT: no such file or directory, scandir 'E:\portfolio\syal00.github.io\app'
-[00:04:16.512] Server  ERROR    ⨯ "unhandledRejection: " Error: ENOENT: no such file or directory, scandir 'E:\portfolio\syal00.github.io\app'
+[00:00:01.246] Server  LOG      ✓ Ready in 776ms
+[00:00:44.411] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:44.411] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         data-arp=""
+                        >
+                  ...
+
+[00:04:22.031] Server  LOG      ✓ Compiled in 13ms
+[00:04:38.215] Server  LOG      ✓ Compiled in 14ms
+[00:04:51.691] Server  LOG      ✓ Compiled in 5ms
+[00:05:26.971] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:27.120] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         data-arp=""
+                        >
+                  ...
+
+[00:05:30.517] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:30.670] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         data-arp=""
+                        >
+                  ...
+
+[00:06:06.783] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:11:19.680] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.681] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.683] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.684] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.686] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.688] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.689] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.691] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.692] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.693] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.695] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.696] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.698] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.699] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.700] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.701] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.702] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.703] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.705] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.705] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.707] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.708] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.709] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.711] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.713] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.714] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:19.716] Server  LOG      ✓ Compiled in 24ms
+[00:11:20.560] Browser ERROR   ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:11:20.560] Browser ERROR   ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:11:45.168] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.169] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.171] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.171] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.173] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.174] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.175] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.177] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.178] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.179] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.180] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.181] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.182] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.182] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.183] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.184] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.185] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.186] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.187] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.188] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.189] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.190] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.191] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.192] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:11:45.209] Server  LOG      ✓ Compiled in 35ms
+[00:11:45.547] Browser ERROR   ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:11:45.548] Browser ERROR   ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve '../contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import '../contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:12:16.746] Server  LOG      ✓ Compiled in 39ms
+[00:12:16.845] Server  ERROR    ⨯ ./app/components/homepage/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+
+
+[00:12:16.853] Server  ERROR    ⨯ ./app/components/homepage/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+
+
+[00:12:17.547] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.548] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.549] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.551] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.552] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.554] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.555] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.556] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.558] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.559] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.560] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.560] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.562] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.563] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.564] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.565] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.566] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.567] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.568] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.568] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.570] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.570] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.571] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.573] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.574] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.574] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.725] Browser ERROR   ./app/components/homepage/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:12:17.725] Browser ERROR   ./app/components/homepage/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:12:17.725] Browser ERROR   ./app/components/homepage/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:12:17.725] Browser ERROR   ./app/components/homepage/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:12:17.725] Browser ERROR   ./app/components/homepage/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:12:17.756] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.758] Browser ERROR   ./app/components/homepage/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:12:17.758] Browser ERROR   ./app/components/homepage/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:12:17.758] Browser ERROR   ./app/components/homepage/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:12:17.758] Browser ERROR   ./app/components/homepage/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:12:17.758] Browser ERROR   ./app/components/homepage/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:12:17.778] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:17.816] Server  LOG      ✓ Compiled in 1ms
+[00:12:17.995] Browser ERROR   uncaughtError: Error: ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:18.013] Browser ERROR   uncaughtError: Error: ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:18.546] Browser ERROR   ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:12:18.546] Browser ERROR   ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:12:18.547] Browser ERROR   ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:12:18.547] Browser ERROR   ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:12:24.245] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:24.246] Server  ERROR    ⨯ ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:24.558] Browser ERROR   ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:12:24.560] Browser ERROR   ./app/components/homepage/contact/index.jsx:5:1
+Module not found: Can't resolve './contact.scss'
+  3 | import ContactForm from './contact-form';
+  4 | import { contactsData } from '../../../../utils/data/contactsData';
+> 5 | import './contact.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function ContactSection() {
+  8 |   return (
+
+Import trace:
+  Server Component:
+    ./app/components/homepage/contact/index.jsx
+    ./app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:13:04.401] Server  ERROR    ⨯ ./app/components/homepage/contact/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+
+
+[00:13:04.569] Browser ERROR   uncaughtError: Error: ./app/components/homepage/contact/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+
+
+[00:13:04.781] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:05.557] Browser ERROR   ./app/components/homepage/contact/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:13:05.557] Browser ERROR   ./app/components/homepage/contact/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:13:05.557] Browser ERROR   ./app/components/homepage/contact/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:13:05.558] Browser ERROR   ./app/components/homepage/contact/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:13:05.558] Browser ERROR   ./app/components/homepage/contact/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:13:05.559] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         data-arp=""
+                        >
+                          <head>
+                          <body
+-                           style={{padding-right:"10px",overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                  ...
+
+[00:13:15.047] Server  LOG      ✓ Compiled in 6ms
+[00:13:15.558] Browser ERROR   ./app/components/homepage/contact/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:13:15.559] Browser ERROR   ./app/components/homepage/contact/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:13:17.155] Server  LOG      ✓ Compiled in 9ms
+[00:13:17.557] Browser ERROR   ./app/components/homepage/contact/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:13:17.558] Browser ERROR   ./app/components/homepage/contact/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:13:30.546] Browser ERROR   ./app/components/homepage/contact/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:13:30.546] Browser ERROR   ./app/components/homepage/contact/contact.scss.css:191:3
+Parsing CSS source code failed
+  189 |   color: var(--muted);
+  190 |
+> 191 |   &:has-text(error) {
+      |   ^
+  192 |     color: #ff6b6b;
+  193 |   }
+  194 | }
+
+'has-text' is not recognized as a valid pseudo-class. Did you mean '::has-text' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/components/homepage/contact/contact.scss.css [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Client Component Browser]
+    ./app/components/homepage/contact/index.jsx [Server Component]
+    ./app/page.js [Server Component]
+[00:14:20.961] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:14:21.278] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:14:21.533] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:22.571] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         data-arp=""
+                        >
+                  ...
+
+[00:14:38.182] Server  LOG      ✓ Compiled in 6ms
