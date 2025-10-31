@@ -36,7 +36,14 @@ jobs:
         env:
           NODE_ENV: production
           NEXT_PUBLIC_APP_URL: https://syal00.github.io
-        continue-on-error: false
+
+      - name: Verify build output
+        run: |
+          ls -la out/
+          if [ ! -f "out/index.html" ]; then
+            echo "ERROR: Build output missing!"
+            exit 1
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
