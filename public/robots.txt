@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://syal00.github.io/sitemap.xml
