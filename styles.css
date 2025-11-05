@@ -111,7 +111,7 @@ body::before {
   pointer-events: none;
 }
 
-/* Subtle checkerboard grid pattern overlay with dark overlay to match hero */
+/* Dark overlay to match hero section */
 body::after {
   content: '';
   position: fixed;
@@ -127,21 +127,6 @@ body::after {
       rgba(27, 27, 27, 0.65) 50%,
       rgba(27, 27, 27, 0.75) 100%
     ),
-    /* Subtle checkerboard pattern */
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 20px,
-      rgba(150, 100, 200, 0.03) 20px,
-      rgba(150, 100, 200, 0.03) 40px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 20px,
-      rgba(150, 100, 200, 0.03) 20px,
-      rgba(150, 100, 200, 0.03) 40px
-    ),
     /* Purple glow upper-left */
     radial-gradient(circle at 25% 25%, rgba(138, 43, 226, 0.15) 0%, transparent 40%),
     /* Pinkish-purple glow upper-right */
@@ -150,52 +135,7 @@ body::after {
   pointer-events: none;
 }
 
-/* Prominent grid lines overlay - Larger grid section (middle-right) */
-.grid-overlay {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    linear-gradient(rgba(147, 112, 219, 0.25) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(147, 112, 219, 0.25) 1px, transparent 1px);
-  background-size: 60px 60px;
-  background-position: 65% 50%;
-  background-repeat: repeat;
-  z-index: -1;
-  pointer-events: none;
-  opacity: 0.7;
-  mask-image: radial-gradient(ellipse 240px 240px at 65% 50%, black 0%, transparent 70%);
-  -webkit-mask-image: radial-gradient(ellipse 240px 240px at 65% 50%, black 0%, transparent 70%);
-}
-
-/* Smaller grid section (bottom-center) - using a wrapper div approach via CSS variable */
-html {
-  --grid-bg: 
-    linear-gradient(rgba(147, 112, 219, 0.25) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(147, 112, 219, 0.25) 1px, transparent 1px);
-}
-
-/* Additional grid overlay using a pseudo-element on html */
-html::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: var(--grid-bg);
-  background-size: 45px 45px;
-  background-position: 50% 85%;
-  background-repeat: repeat;
-  z-index: -2;
-  pointer-events: none;
-  opacity: 0.7;
-  mask-image: radial-gradient(ellipse 180px 180px at 50% 85%, black 0%, transparent 70%);
-  -webkit-mask-image: radial-gradient(ellipse 180px 180px at 50% 85%, black 0%, transparent 70%);
-}
+/* Grid overlay removed - no longer needed */
 
 .skip-to-content {
   position: absolute;
@@ -672,6 +612,7 @@ html::before {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 30%;
   border: 4px solid rgba(159, 226, 191, 0.3);
   box-shadow: 0 0 30px rgba(159, 226, 191, 0.2);
   transition: all 0.3s ease;
@@ -681,6 +622,7 @@ html::before {
 .about-profile .profile-image {
   width: 180px;
   height: 180px;
+  object-position: center 30%;
 }
 
 .profile-image:hover {
@@ -713,6 +655,7 @@ html::before {
   .profile-image {
     width: 150px;
     height: 150px;
+    object-position: center 30%;
   }
   
   .profile-name {
@@ -1454,7 +1397,7 @@ a:hover {
 
 .btn {
   --btn-bg: linear-gradient(135deg, #00ffff, #00cccc);
-  color: #0d1220;
+  color: #ffffff;
   background: var(--btn-bg);
   border: 0;
   border-radius: 10px;
@@ -1467,11 +1410,13 @@ a:hover {
   text-decoration: none;
   display: inline-block;
   font-size: 0.95rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .btn:hover:not(:disabled) {
   transform: translateY(-1px);
   filter: brightness(1.05);
+  color: #ffffff;
 }
 
 .btn:active:not(:disabled) {
@@ -1485,15 +1430,18 @@ a:hover {
 }
 
 .btn.outline {
-  color: var(--text);
-  background: transparent;
-  border: 1px solid rgba(127, 217, 163, 0.45);
-  box-shadow: none;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 255, 255, 0.6);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .btn.outline:hover:not(:disabled) {
-  background: rgba(127, 217, 163, 0.1);
-  border-color: rgba(127, 217, 163, 0.65);
+  background: rgba(0, 255, 255, 0.15);
+  border-color: rgba(0, 255, 255, 0.8);
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
 }
 
 .btn.ghost {
