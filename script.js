@@ -43,6 +43,40 @@ document.addEventListener('DOMContentLoaded', function() {
   handleScroll(); // Check on page load
 })();
 
+// Mobile Menu Toggle
+(function() {
+  const navbarToggle = document.getElementById('navbar-toggle');
+  const navbarLinks = document.getElementById('navbar-links');
+  
+  if (navbarToggle && navbarLinks) {
+    navbarToggle.addEventListener('click', function() {
+      const isExpanded = navbarToggle.getAttribute('aria-expanded') === 'true';
+      navbarToggle.setAttribute('aria-expanded', !isExpanded);
+      navbarLinks.classList.toggle('active');
+      navbarToggle.classList.toggle('active');
+    });
+    
+    // Close menu when clicking on a link
+    const links = navbarLinks.querySelectorAll('.navbar-link');
+    links.forEach(function(link) {
+      link.addEventListener('click', function() {
+        navbarLinks.classList.remove('active');
+        navbarToggle.classList.remove('active');
+        navbarToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!navbarToggle.contains(e.target) && !navbarLinks.contains(e.target)) {
+        navbarLinks.classList.remove('active');
+        navbarToggle.classList.remove('active');
+        navbarToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+})();
+
 // Scroll to Top Button
 (function() {
   const scrollToTopBtn = document.getElementById('scroll-to-top');
