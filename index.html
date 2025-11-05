@@ -6,9 +6,15 @@
   <meta name="description" content="Rakesh Syal - Full Stack Developer Portfolio. Skills in Python, C#, .NET, PHP, JavaScript, HTML, CSS, and more.">
   <meta name="keywords" content="Rakesh Syal, Full Stack Developer, Web Developer, Portfolio, Python, JavaScript, React">
   <title>Rakesh Syal - Full Stack Developer</title>
+  <!-- Font Awesome for skill icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="noopener noreferrer">
+  <!-- Prism.js for syntax highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" crossorigin="anonymous" referrerpolicy="noopener noreferrer">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Grid Overlay -->
+  <div class="grid-overlay"></div>
   <!-- Skip to content link -->
   <a href="#hero" class="skip-to-content">Skip to content</a>
 
@@ -29,15 +35,46 @@
 
   <!-- Hero Section -->
   <section class="hero-section" id="hero" aria-labelledby="hero-title">
-    <div class="hero-section-container">
-      <h1 id="hero-title" class="hero-section-title">
-        Hi, I am <span style="color: #00ffff;">Rakesh Syal</span>
-      </h1>
-      <p class="hero-section-subtitle">Full Stack Developer</p>
-      <p class="hero-section-location">Ottawa, ON</p>
-      <div class="hero-section-cta">
-        <a href="#contact" class="hero-section-button" aria-label="Go to contact section">Contact me</a>
-        <a href="#projects" class="hero-section-button secondary" aria-label="Go to projects section">Get Resume</a>
+    <div class="hero-section-wrapper">
+      <!-- Left Side: Hero Content -->
+      <div class="hero-section-container">
+        <h1 id="hero-title" class="hero-section-title">
+          Hi, I am <span class="hero-name">Rakesh Syal</span>
+        </h1>
+        <p class="hero-section-subtitle">Full Stack Developer</p>
+        <p class="hero-section-location">Ottawa, ON</p>
+        <div class="hero-section-cta">
+          <a href="#contact" class="hero-section-button" aria-label="Go to contact section">Contact me</a>
+          <a href="#projects" class="hero-section-button secondary" aria-label="Go to projects section">Get Resume</a>
+        </div>
+      </div>
+
+      <!-- Right Side: Code Card -->
+      <div class="hero-code-container">
+        <div class="code-card-wrapper">
+          <pre class="code-block"><code class="language-javascript">const coder = {
+  name: 'Rakesh Syal',
+  skills: {
+    languages: ['Java', 'Python', 'JavaScript', 'C', 'C#', 'C++', 'PHP'],
+    frameworks: ['.NET', 'Spring Boot', 'React', 'Bootstrap'],
+    databases: ['MySQL', 'SQLite'],
+    tools: ['Git', 'Docker', 'Kubernetes', 'Linux/UNIX'],
+    technologies: ['REST APIs', 'Web Services', 'Networking', 'Raspberry Pi']
+  },
+  hardWorker: true,
+  quickLearner: true,
+  problemSolver: true,
+  hireable: function() {
+    return (
+      this.hardWorker &&
+      this.problemSolver &&
+      Object.values(this.skills).flat().length >= 10
+    );
+  }
+};
+
+console.log(coder.hireable()); // true</code></pre>
+        </div>
       </div>
     </div>
   </section>
@@ -46,40 +83,41 @@
   <section class="section" id="about" aria-labelledby="about-title">
     <h2 id="about-title" class="section-title">About Me</h2>
     <div class="max-width-container">
-      <p class="about-bio">
-        I have strong skills in Python, C#, .NET, PHP, JavaScript, HTML, and CSS for web and application development. I am experienced with SQLite databases for managing and storing data effectively. My knowledge extends to computer networking and hands-on work with Raspberry Pi projects. I also have exposure to graphic technologies, combining technical and design skills to build practical solutions.
-      </p>
-      <div class="highlights-grid">
-        <div class="card">
-          <p>Performance-first</p>
+      <div class="about-wrapper">
+        <!-- Left Side: Bio Text -->
+        <div class="about-content">
+          <p class="about-bio">
+            I have strong skills in Python, C#, .NET, PHP, JavaScript, HTML, and CSS for web and application development. I am experienced with SQLite databases for managing and storing data effectively. My knowledge extends to computer networking and hands-on work with Raspberry Pi projects. I also have exposure to graphic technologies, combining technical and design skills to build practical solutions.
+          </p>
+          <div class="about-info-grid">
+            <div class="card text-center">
+              <h3 class="about-info-heading">Location</h3>
+              <p>Ottawa, ON</p>
+            </div>
+            <div class="card text-center">
+              <h3 class="about-info-heading">Links</h3>
+              <div style="display: flex; gap: 1rem; justify-content: center;">
+                <a href="https://github.com/syal00" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://syal00.github.io" target="_blank" rel="noopener noreferrer">Portfolio</a>
+              </div>
+            </div>
+            <div class="card text-center">
+              <h3 class="about-info-heading">Email</h3>
+              <a href="mailto:syal0005@algonquinlive.com">syal0005@algonquinlive.com</a>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <p>DX lover</p>
-        </div>
-        <div class="card">
-          <p>A11y advocate</p>
-        </div>
-        <div class="card">
-          <p>Skilled in Linux environments, Agile collaboration, and secure coding practices</p>
-        </div>
-        <div class="card">
-          <p>Recognized for problem-solving, adaptability, and delivering quality results</p>
-        </div>
-      </div>
-      <div class="about-info-grid">
-        <div class="card text-center">
-          <h3 style="color: #00ffff; font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Location</h3>
-          <p>Ottawa, ON</p>
-        </div>
-        <div class="card text-center">
-          <h3 style="color: #00ffff; font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Email</h3>
-          <a href="mailto:syal0005@algonquinlive.com" style="color: #ffffff; transition: color 0.3s;">syal0005@algonquinlive.com</a>
-        </div>
-        <div class="card text-center">
-          <h3 style="color: #00ffff; font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Links</h3>
-          <div style="display: flex; gap: 1rem; justify-content: center;">
-            <a href="https://github.com/syal00" target="_blank" rel="noopener noreferrer" style="color: #ffffff; transition: color 0.3s;">GitHub</a>
-            <a href="https://syal00.github.io" target="_blank" rel="noopener noreferrer" style="color: #ffffff; transition: color 0.3s;">Portfolio</a>
+        
+        <!-- Right Side: Profile Card -->
+        <div class="about-profile">
+          <div class="profile-container">
+            <img 
+              src="images/profile-photo.png" 
+              alt="Rakesh Syal - Full Stack Developer" 
+              class="profile-image"
+            />
+            <h2 id="profile-title" class="profile-name">Rakesh Syal</h2>
+            <p class="profile-tagline">Full Stack Developer</p>
           </div>
         </div>
       </div>
@@ -89,87 +127,247 @@
   <!-- Skills Section -->
   <section class="section" id="skills" aria-labelledby="skills-title">
     <h2 id="skills-title" class="section-title">Technical Skills</h2>
-    <div class="skills-grid">
-      <div class="card text-center skill-card">
+    <div class="skills-marquee-wrapper">
+      <div class="skills-marquee-track" role="list" aria-label="Technical skills list">
+        <div class="skills-marquee-content">
+          <!-- Programming Languages -->
+          <div class="skill-badge" role="listitem" aria-label="Java programming language">
+            <i class="fab fa-java" aria-hidden="true"></i>
+            <span>Java</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="Python programming language">
+            <i class="fab fa-python" aria-hidden="true"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="JavaScript programming language">
+            <i class="fab fa-js" aria-hidden="true"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="C programming language">
+            <i class="fas fa-code" aria-hidden="true"></i>
+            <span>C</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="C Sharp programming language">
+            <i class="fab fa-microsoft" aria-hidden="true"></i>
+            <span>C#</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="C Plus Plus programming language">
+            <i class="fas fa-file-code" aria-hidden="true"></i>
+            <span>C++</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="PHP programming language">
+            <i class="fab fa-php" aria-hidden="true"></i>
+            <span>PHP</span>
+          </div>
+          
+          <!-- Frameworks & Libraries -->
+          <div class="skill-badge" role="listitem" aria-label=".NET framework">
+            <i class="fab fa-microsoft" aria-hidden="true"></i>
+            <span>.NET</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="HTML5 markup language">
+            <i class="fab fa-html5" aria-hidden="true"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="CSS3 styling language">
+            <i class="fab fa-css3-alt" aria-hidden="true"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="Bootstrap framework">
+            <i class="fab fa-bootstrap" aria-hidden="true"></i>
+            <span>Bootstrap</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="REST APIs">
+            <i class="fas fa-plug" aria-hidden="true"></i>
+            <span>REST APIs</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="Web Services">
+            <i class="fas fa-cloud" aria-hidden="true"></i>
+            <span>Web Services</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="Spring Boot framework">
+            <i class="fas fa-leaf" aria-hidden="true"></i>
+            <span>Spring Boot</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="React library">
+            <i class="fab fa-react" aria-hidden="true"></i>
+            <span>React</span>
+          </div>
+          
+          <!-- Tools & Technologies -->
+          <div class="skill-badge" role="listitem" aria-label="Git version control">
+            <i class="fab fa-git-alt" aria-hidden="true"></i>
+            <span>Git</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="Eclipse IDE">
+            <i class="fab fa-java" aria-hidden="true"></i>
+            <span>Eclipse</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="Visual Studio Code editor">
+            <i class="fas fa-code" aria-hidden="true"></i>
+            <span>Visual Studio Code</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="Agile Methodologies">
+            <i class="fas fa-project-diagram" aria-hidden="true"></i>
+            <span>Agile Methodologies</span>
+          </div>
+          
+          <!-- Databases -->
+          <div class="skill-badge" role="listitem" aria-label="MySQL database">
+            <i class="fas fa-database" aria-hidden="true"></i>
+            <span>MySQL</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="SQLite database">
+            <i class="fas fa-database" aria-hidden="true"></i>
+            <span>SQLite</span>
+          </div>
+          
+          <!-- Infrastructure & DevOps -->
+          <div class="skill-badge" role="listitem" aria-label="Linux and UNIX operating systems">
+            <i class="fab fa-linux" aria-hidden="true"></i>
+            <span>Linux/UNIX (RHEL)</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="Virtual Machines">
+            <i class="fas fa-server" aria-hidden="true"></i>
+            <span>Virtual Machines</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="Kubernetes container orchestration">
+            <i class="fab fa-docker" aria-hidden="true"></i>
+            <span>Kubernetes (basic)</span>
+          </div>
+          <div class="skill-badge" role="listitem" aria-label="Networking Concepts">
+            <i class="fas fa-network-wired" aria-hidden="true"></i>
+            <span>Networking Concepts</span>
+        </div>
+          <div class="skill-badge" role="listitem" aria-label="Raspberry Pi">
+            <i class="fas fa-microchip" aria-hidden="true"></i>
+            <span>Raspberry Pi</span>
+      </div>
+          <div class="skill-badge" role="listitem" aria-label="Graphic Technologies">
+            <i class="fas fa-palette" aria-hidden="true"></i>
+            <span>Graphic Technologies</span>
+          </div>
+        </div>
+        <!-- Duplicate content for seamless loop -->
+        <div class="skills-marquee-content" aria-hidden="true">
+      <!-- Programming Languages -->
+      <div class="skill-badge" role="listitem" aria-label="Java programming language">
+        <i class="fab fa-java" aria-hidden="true"></i>
         <span>Java</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="Python programming language">
+        <i class="fab fa-python" aria-hidden="true"></i>
         <span>Python</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="JavaScript programming language">
+        <i class="fab fa-js" aria-hidden="true"></i>
         <span>JavaScript</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="C programming language">
+        <i class="fas fa-code" aria-hidden="true"></i>
         <span>C</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="C Sharp programming language">
+        <i class="fab fa-microsoft" aria-hidden="true"></i>
         <span>C#</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="C Plus Plus programming language">
+        <i class="fas fa-file-code" aria-hidden="true"></i>
         <span>C++</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="PHP programming language">
+        <i class="fab fa-php" aria-hidden="true"></i>
         <span>PHP</span>
       </div>
-      <div class="card text-center skill-card">
+      
+      <!-- Frameworks & Libraries -->
+      <div class="skill-badge" role="listitem" aria-label=".NET framework">
+        <i class="fab fa-microsoft" aria-hidden="true"></i>
         <span>.NET</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="HTML5 markup language">
+        <i class="fab fa-html5" aria-hidden="true"></i>
         <span>HTML5</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="CSS3 styling language">
+        <i class="fab fa-css3-alt" aria-hidden="true"></i>
         <span>CSS3</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="Bootstrap framework">
+        <i class="fab fa-bootstrap" aria-hidden="true"></i>
         <span>Bootstrap</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="REST APIs">
+        <i class="fas fa-plug" aria-hidden="true"></i>
         <span>REST APIs</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="Web Services">
+        <i class="fas fa-cloud" aria-hidden="true"></i>
         <span>Web Services</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="Spring Boot framework">
+        <i class="fas fa-leaf" aria-hidden="true"></i>
         <span>Spring Boot</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="React library">
+        <i class="fab fa-react" aria-hidden="true"></i>
         <span>React</span>
       </div>
-      <div class="card text-center skill-card">
+      
+      <!-- Tools & Technologies -->
+      <div class="skill-badge" role="listitem" aria-label="Git version control">
+        <i class="fab fa-git-alt" aria-hidden="true"></i>
         <span>Git</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="Eclipse IDE">
+        <i class="fab fa-java" aria-hidden="true"></i>
         <span>Eclipse</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="Visual Studio Code editor">
+        <i class="fas fa-code" aria-hidden="true"></i>
         <span>Visual Studio Code</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="Agile Methodologies">
+        <i class="fas fa-project-diagram" aria-hidden="true"></i>
         <span>Agile Methodologies</span>
       </div>
-      <div class="card text-center skill-card">
+      
+      <!-- Databases -->
+      <div class="skill-badge" role="listitem" aria-label="MySQL database">
+        <i class="fas fa-database" aria-hidden="true"></i>
         <span>MySQL</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="SQLite database">
+        <i class="fas fa-database" aria-hidden="true"></i>
         <span>SQLite</span>
       </div>
-      <div class="card text-center skill-card">
+      
+      <!-- Infrastructure & DevOps -->
+      <div class="skill-badge" role="listitem" aria-label="Linux and UNIX operating systems">
+        <i class="fab fa-linux" aria-hidden="true"></i>
         <span>Linux/UNIX (RHEL)</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="Virtual Machines">
+        <i class="fas fa-server" aria-hidden="true"></i>
         <span>Virtual Machines</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="Kubernetes container orchestration">
+        <i class="fab fa-docker" aria-hidden="true"></i>
         <span>Kubernetes (basic)</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="Networking Concepts">
+        <i class="fas fa-network-wired" aria-hidden="true"></i>
         <span>Networking Concepts</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="Raspberry Pi">
+        <i class="fas fa-microchip" aria-hidden="true"></i>
         <span>Raspberry Pi</span>
       </div>
-      <div class="card text-center skill-card">
+      <div class="skill-badge" role="listitem" aria-label="Graphic Technologies">
+        <i class="fas fa-palette" aria-hidden="true"></i>
         <span>Graphic Technologies</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -179,61 +377,61 @@
     <h2 id="projects-title" class="section-title">Featured Projects</h2>
     <div class="projects-grid">
       <article class="card project-card" role="article" aria-labelledby="project-0-title">
-        <h3 id="project-0-title" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #00ffff;">Banking System Console App</h3>
-        <p style="color: #cccccc; margin-bottom: 1rem;">Designed a console-based banking system with account creation, deposits/withdrawals, and lookup features. Applied object-oriented principles and exception handling.</p>
+        <h3 id="project-0-title" class="project-title">Banking System Console App</h3>
+        <p class="project-description">Designed a console-based banking system with account creation, deposits/withdrawals, and lookup features. Applied object-oriented principles and exception handling.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">Python</span>
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">OOP</span>
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">Exception Handling</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">OOP</span>
+          <span class="project-tag">Exception Handling</span>
         </div>
         <div style="display: flex; gap: 1rem;">
           <a href="https://github.com/syal00/Banking-System-Console-App-" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Banking System Console App source code on GitHub">Code</a>
         </div>
       </article>
       <article class="card project-card" role="article" aria-labelledby="project-1-title">
-        <h3 id="project-1-title" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #00ffff;">PokeDex Web App</h3>
-        <p style="color: #cccccc; margin-bottom: 1rem;">Built an interactive Pokedex using PokeAPI, with Pokémon search, catch/release features via localStorage, and dynamic UI elements.</p>
+        <h3 id="project-1-title" class="project-title">PokeDex Web App</h3>
+        <p class="project-description">Built an interactive Pokedex using PokeAPI, with Pokémon search, catch/release features via localStorage, and dynamic UI elements.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">JavaScript</span>
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">API</span>
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">LocalStorage</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">API</span>
+          <span class="project-tag">LocalStorage</span>
         </div>
         <div style="display: flex; gap: 1rem;">
           <a href="https://github.com/syal00" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View PokeDex Web App source code on GitHub">Code</a>
         </div>
       </article>
       <article class="card project-card" role="article" aria-labelledby="project-2-title">
-        <h3 id="project-2-title" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #00ffff;">Driver Recruitment Landing Page</h3>
-        <p style="color: #cccccc; margin-bottom: 1rem;">Developed a responsive landing page for a driver recruitment platform with a signup form, earnings calculator, and mobile-first design principles.</p>
+        <h3 id="project-2-title" class="project-title">Driver Recruitment Landing Page</h3>
+        <p class="project-description">Developed a responsive landing page for a driver recruitment platform with a signup form, earnings calculator, and mobile-first design principles.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">HTML</span>
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">CSS</span>
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">JavaScript</span>
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">Responsive Design</span>
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Responsive Design</span>
         </div>
         <div style="display: flex; gap: 1rem;">
           <a href="https://github.com/syal00" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Driver Recruitment Landing Page source code on GitHub">Code</a>
         </div>
       </article>
       <article class="card project-card" role="article" aria-labelledby="project-3-title">
-        <h3 id="project-3-title" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #00ffff;">Traffic Light Simulator</h3>
-        <p style="color: #cccccc; margin-bottom: 1rem;">Created a hardware + CLI traffic light simulation with adjustable timing. Integrated NeoPixel LEDs with Python scripting for embedded and console testing.</p>
+        <h3 id="project-3-title" class="project-title">Traffic Light Simulator</h3>
+        <p class="project-description">Created a hardware + CLI traffic light simulation with adjustable timing. Integrated NeoPixel LEDs with Python scripting for embedded and console testing.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">Python</span>
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">Hardware</span>
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">Raspberry Pi</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Hardware</span>
+          <span class="project-tag">Raspberry Pi</span>
         </div>
         <div style="display: flex; gap: 1rem;">
           <a href="https://github.com/syal00" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Traffic Light Simulator source code on GitHub">Code</a>
         </div>
       </article>
       <article class="card project-card" role="article" aria-labelledby="project-4-title">
-        <h3 id="project-4-title" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #00ffff;">Morse Code Converter</h3>
-        <p style="color: #cccccc; margin-bottom: 1rem;">Implemented a terminal application to translate text to Morse code using dictionary mappings, handling formatting between letters and words.</p>
+        <h3 id="project-4-title" class="project-title">Morse Code Converter</h3>
+        <p class="project-description">Implemented a terminal application to translate text to Morse code using dictionary mappings, handling formatting between letters and words.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">Python</span>
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">Terminal</span>
-          <span style="padding: 0.25rem 0.5rem; background: rgba(0, 255, 255, 0.2); color: #00ffff; border-radius: 4px; font-size: 0.875rem;">Dictionary</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Terminal</span>
+          <span class="project-tag">Dictionary</span>
         </div>
         <div style="display: flex; gap: 1rem;">
           <a href="https://github.com/syal00" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Morse Code Converter source code on GitHub">Code</a>
@@ -247,9 +445,9 @@
     <h2 id="experience-title" class="section-title">Professional Experience</h2>
     <div class="experience-timeline">
       <article class="card experience-card" role="article" aria-labelledby="experience-0-title">
-        <h3 id="experience-0-title" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #00ffff;">Web Developer and networking</h3>
-        <p style="color: #999999; margin-bottom: 1rem;">SCL Inc., Ottawa | May 2025 – Aug 2025</p>
-        <ul style="list-style: disc; list-style-position: inside; color: #cccccc; line-height: 1.8;">
+        <h3 id="experience-0-title" class="experience-title">Web Developer and networking</h3>
+        <p class="experience-meta">SCL Inc., Ottawa | May 2025 – Aug 2025</p>
+        <ul class="experience-list" style="list-style: disc; list-style-position: inside; line-height: 1.8;">
           <li>Worked as a Web Developer, contributing to front-end web design and assisting with backend tasks</li>
           <li>Helped design and improve website layouts, ensuring usability and responsive design</li>
           <li>Supported backend development, including database and server-side updates</li>
@@ -258,9 +456,9 @@
         </ul>
       </article>
       <article class="card experience-card" role="article" aria-labelledby="experience-1-title">
-        <h3 id="experience-1-title" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #00ffff;">Student Developer</h3>
-        <p style="color: #999999; margin-bottom: 1rem;">Algonquin College, Ottawa | Jan 2025 – Present</p>
-        <ul style="list-style: disc; list-style-position: inside; color: #cccccc; line-height: 1.8;">
+        <h3 id="experience-1-title" class="experience-title">Student Developer</h3>
+        <p class="experience-meta">Algonquin College, Ottawa | Jan 2025 – Present</p>
+        <ul class="experience-list" style="list-style: disc; list-style-position: inside; line-height: 1.8;">
           <li>Designed and tested academic projects using Python and JavaScript</li>
           <li>Developed secure coding practices for back-end and front-end solutions</li>
           <li>Collaborated with Agile teams to plan and execute sprints</li>
@@ -275,25 +473,17 @@
     <h2 id="education-title" class="section-title">Education</h2>
     <div class="max-width-container">
       <article class="card education-card" role="article" aria-labelledby="education-0-title">
-        <h3 id="education-0-title" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #00ffff;">Diploma in Web Development and Internet Applications</h3>
-        <p style="color: #999999; margin-bottom: 1rem;">Algonquin College, Ottawa, ON | January 2025 – Present</p>
+        <h3 id="education-0-title" class="education-title">Diploma in Web Development and Internet Applications</h3>
+        <p class="education-meta">Algonquin College, Ottawa, ON | January 2025 – Present</p>
         <div style="margin-bottom: 1rem;">
-          <h4 style="font-weight: bold; color: #00ffff; margin-bottom: 0.5rem;">Relevant Courses:</h4>
-          <p style="color: #cccccc;">Web Development, Front-End Design, Server-Side Programming, Full-Stack Development</p>
+          <h4 class="subsection-title">Relevant Courses:</h4>
+          <p class="education-description">Web Development, Front-End Design, Server-Side Programming, Full-Stack Development</p>
         </div>
         <div>
-          <h4 style="font-weight: bold; color: #00ffff; margin-bottom: 0.5rem;">Activities:</h4>
-          <p style="color: #cccccc;">Engaged in peer code reviews, Agile sprint planning, Full-stack group projects</p>
+          <h4 class="subsection-title">Activities:</h4>
+          <p class="education-description">Engaged in peer code reviews, Agile sprint planning, Full-stack group projects</p>
         </div>
       </article>
-    </div>
-  </section>
-
-  <!-- Blog Section -->
-  <section class="section" id="blog" aria-labelledby="blog-title">
-    <h2 id="blog-title" class="section-title">Blog</h2>
-    <div class="max-width-container text-center">
-      <p style="color: #cccccc;">Blog posts coming soon. Check back later for updates!</p>
     </div>
   </section>
 
@@ -413,7 +603,7 @@
         <a href="https://github.com/syal00" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub profile">🌐 GitHub</a>
         <a href="https://syal00.github.io" target="_blank" rel="noopener noreferrer" aria-label="Visit portfolio">💼 Portfolio</a>
       </div>
-      <p>&copy; <span id="current-year">2025</span> Rakesh Syal. All rights reserved.</p>
+      <p>&copy; <span id="current-year">2025</span> <span class="text-mint">Rakesh Syal</span>. All rights reserved.</p>
     </div>
   </footer>
 
@@ -422,6 +612,10 @@
     ↑
   </button>
 
+  <!-- Prism.js for syntax highlighting -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js" crossorigin="anonymous" referrerpolicy="noopener noreferrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" crossorigin="anonymous" referrerpolicy="noopener noreferrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js" crossorigin="anonymous" referrerpolicy="noopener noreferrer"></script>
   <script src="script.js"></script>
 </body>
 </html>
